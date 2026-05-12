@@ -1,17 +1,41 @@
 ---
-
+import Hero from "../components/Hero.astro";
 ---
 
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>DevOps Pipeline CI/CD</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<Hero />
+		</main>
 	</body>
 </html>
+
+<style is:global>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: #1f1f1f;
+	min-height: 100vh;
+	color: #fff;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+</style>

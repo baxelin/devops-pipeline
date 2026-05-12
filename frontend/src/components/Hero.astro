@@ -1,0 +1,165 @@
+---
+---
+
+<section class="hero">
+	<div class="hero-content">
+		<h1>DevOps Pipeline CI/CD</h1>
+		<p class="subtitle">Automação, Integração e Entrega Contínua para o Futuro</p>
+		<p class="description">
+			Acelere seu desenvolvimento com pipelines automatizados. Deploy rápido, testes contínuos e confiabilidade em produção.
+		</p>
+		<div class="features">
+			<div class="feature">
+				<span class="icon">⚡</span>
+				<p>Deploy Automático</p>
+			</div>
+			<div class="feature">
+				<span class="icon">🔄</span>
+				<p>Integração Contínua</p>
+			</div>
+			<div class="feature">
+				<span class="icon">✅</span>
+				<p>Testes Automatizados</p>
+			</div>
+			<div class="feature">
+				<span class="icon">🛡️</span>
+				<p>Segurança em Foco</p>
+			</div>
+		</div>
+	</div>
+	<div class="hero-visual">
+		<div class="pipeline-diagram">
+			<div class="stage">Code</div>
+			<div class="arrow">→</div>
+			<div class="stage">Build</div>
+			<div class="arrow">→</div>
+			<div class="stage">Test</div>
+			<div class="arrow">→</div>
+			<div class="stage">Deploy</div>
+		</div>
+	</div>
+</section>
+
+<style>
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+	padding: 4rem 2rem;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.hero-content h1 {
+	font-size: 3.5rem;
+	font-weight: 800;
+	color: white;
+	margin-bottom: 1rem;
+	line-height: 1.2;
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.9);
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.description {
+	font-size: 1.1rem;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 2rem;
+	line-height: 1.6;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.feature {
+	background: rgba(255, 255, 255, 0.05);
+	padding: 1.5rem;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: white;
+}
+
+.feature .icon {
+	font-size: 2rem;
+}
+
+.feature p {
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.hero-visual {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pipeline-diagram {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background: rgba(255, 255, 255, 0.05);
+	padding: 2rem;
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.stage {
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	padding: 1rem 1.5rem;
+	border-radius: 8px;
+	font-weight: 700;
+	text-align: center;
+	min-width: 100px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.arrow {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 2rem 1rem;
+	}
+
+	.hero-content h1 {
+		font-size: 2.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+	}
+
+	.cta-buttons {
+		flex-direction: column;
+	}
+
+	.features {
+		grid-template-columns: 1fr;
+	}
+
+	.pipeline-diagram {
+		gap: 0.5rem;
+	}
+}
+</style>
